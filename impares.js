@@ -8,10 +8,10 @@ frm.addEventListener("submit", (e) => {
     //obter o número informado
     const numero = Number(frm.inNumero.value);
     let resposta = ""
-    //criar um laço de repetição iniciando de 1 até 10
+    //criar um laço de repetição iniciando de 1 até número
     for (let i = 1; i<=numero; i++) {
         
-        if(numero %i==0){
+        if(numero %i!=0){
            resposta+= i + "\n";
             
         }
